@@ -14,7 +14,7 @@ const Options = ({careerImages}) => {
          }
             <div className="info">
               <h2> Do you have experience with Software Development? <br /> Send us a copy of your resume or a portfolio of your work to be considered.
-                <br /> Technologies used at Ever Lasting Apps</h2>
+                <br /> Technologies used at Devgin Apps</h2>
                 <div className="subheading">
                   <div className="technologies">
                     <h3>Front End Technologies</h3>

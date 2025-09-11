@@ -35,7 +35,7 @@ const Expertise = () => {
         <div className="categories">
           <MdWork size={70} color='black'/> 
           <h2>Careers</h2>
-          <h3>Are you seeking to become part of the Ever Lasting Apps community? We embrace diversity and welcome individuals from a wide range of backgrounds in engineering, marketing, and design to join us!</h3>
+          <h3>Are you seeking to become part of the Devign Apps community? We embrace diversity and welcome individuals from a wide range of backgrounds in engineering, marketing, and design to join us!</h3>
           <Link className='expertise_redirect' to='/careers'><button>Learn More <AiOutlineArrowRight/></button></Link>
         </div>
       </div>

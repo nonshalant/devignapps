@@ -1,5 +1,4 @@
 import { Image } from 'cloudinary-react'
-import React from 'react'
 import {Link} from 'react-router-dom'
 
 const LeftSide = ({aboutImages}) => {
@@ -7,9 +6,9 @@ const LeftSide = ({aboutImages}) => {
     <div className="content">
           <div className="left">
             <div className="left_title">
-                <h1>Welcome To Ever Lasting Apps</h1>
-                <h2>A leading IT consultancy startup dedicated to helping businesses optimize their technology systems and processes for increased efficiency and growth. Our team of experienced and highly skilled technology experts are committed to delivering innovative solutions that meet the unique needs of each of our clients.</h2>
-                <h2>Ever Lasting Apps has quickly established itself as a trusted partner to companies across a range of industries. With a focus on delivering top-notch services and unparalleled customer support, we have earned a reputation for excellence and are committed to maintaining our position as a leader in the field.</h2>
+                <h1>Welcome To Devign Apps</h1>
+                <h2>A leading IT consultancy company dedicated to helping businesses optimize their technology systems and processes for increased efficiency and growth. Our team of experienced and highly skilled technology experts are committed to delivering innovative solutions that meet the unique needs of each of our clients.</h2>
+                <h2>Devgin Apps has quickly established itself as a trusted partner to companies across a range of industries. With a focus on delivering top-notch services and unparalleled customer support, we have earned a reputation for excellence and are committed to maintaining our position as a leader in the field.</h2>
             </div>
 
             <div className="container mission_statement">
@@ -19,7 +18,7 @@ const LeftSide = ({aboutImages}) => {
 
             <div className="our_services container">
                 <h2>Our Services</h2>
-                <p className='sub_heading'>At Ever Lasting Apps, we offer a comprehensive suite of IT consultancy services designed to help businesses of all sizes enhance their digital foot-print. These services include:</p>   
+                <p className='sub_heading'>At Devgin Apps, we offer a comprehensive suite of IT consultancy services designed to help businesses of all sizes enhance their digital foot-print. These services include:</p>   
                 <div className="inner_container">
                     <div className="service">
                         <p> <span> Website Development </span> We work with you to develop a customized website that aligns with your business goals and ensures that your website is optimized for growth and efficiency.</p>  
@@ -56,7 +55,7 @@ const LeftSide = ({aboutImages}) => {
 
             <div className="why_choose_us container">
                 <h2>Why Choose Us</h2>
-                <p>At Ever Lasting Apps, we are committed to delivering the best possible customer experience. Our team of experts are dedicated to providing customized, innovative solutions that meet the unique needs of each of our clients. Additionally, we offer a wide range of benefits that set us apart from other IT consultancy companies, including:</p>
+                <p>At Devgin Apps, we are committed to delivering the best possible customer experience. Our team of experts are dedicated to providing customized, innovative solutions that meet the unique needs of each of our clients. Additionally, we offer a wide range of benefits that set us apart from other IT consultancy companies, including:</p>
                 <ul className="list">
                     <li><span>Experienced and Skilled Team:</span>  Our team of technology experts is highly experienced and has a proven track record of delivering outstanding results for our clients.</li>
                     <li><span>Customer-Focused Approach:</span> We are committed to delivering exceptional customer service and support, and we always put the needs of our clients first.</li>
@@ -67,7 +66,7 @@ const LeftSide = ({aboutImages}) => {
 
             <div className="get_in_touch container">
                 <h2>Get in Touch</h2>
-                <p>If you're looking for an IT consultancy company that is dedicated to helping your business succeed, look no further than Ever Lasting Apps. To learn more about our services and how we can help you optimize your technology systems and processes, contact us today. Our team is always available to answer your questions and help you get started.</p>
+                <p>If you're looking for an IT consultancy company that is dedicated to helping your business succeed, look no further than Devign Apps. To learn more about our services and how we can help you optimize your technology systems and processes, contact us today. Our team is always available to answer your questions and help you get started.</p>
                 <Link to='/contact'><button>Get In Touch</button></Link>
             </div>
         </div>

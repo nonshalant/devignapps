@@ -36,7 +36,7 @@ const LetsGetStarted = () => {
       "X1AhV2j4lZFoBsbdP"
     );
     alert(
-      "Your email has been sent. Someone from Ever Lasting Apps will be in contact with you shortly! Thank you."
+      "Your email has been sent. Someone from Devign Apps will be in contact with you shortly! Thank you."
     );
     setFormInputs({
       firstName: "",

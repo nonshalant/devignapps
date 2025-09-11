@@ -10,7 +10,7 @@ const About = () => {
         </div>
         <div className='content'>
             <h1>Dedicated to advancing your success.</h1>
-            <h3>Ever Last Apps has been committed to delivering exceptional web design, development, hosting, and digital marketing services. Our focus is on your success, and we partner with you to create customized online solutions that meet your specific needs. Your success is our success, and we strive to find the most effective ways to help your business grow online..</h3>
+            <h3>Devign Apps has been committed to delivering exceptional web design, development, hosting, and digital marketing services. Our focus is on your success, and we partner with you to create customized online solutions that meet your specific needs. Your success is our success, and we strive to find the most effective ways to help your business grow online..</h3>
             <Link to='/about'><button>More About Us</button></Link>
         </div>
     </div>

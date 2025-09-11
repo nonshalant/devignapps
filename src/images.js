@@ -3,7 +3,7 @@ export const images = {
     {
       id: "logo",
       image:
-        "https://res.cloudinary.com/dyzydm9nl/image/upload/Ever%20Last%20Apps/Initial_Brand_logo_3_xmblvx.png",
+        "https://res.cloudinary.com/dyzydm9nl/image/upload/v1757610403/Ever%20Last%20Apps/IMG_8776_lds9ba.png",
       cloudName: "dyzydm9nl",
     },
     {
