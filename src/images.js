@@ -47,7 +47,16 @@ export const images = {
   ],
   reputation_images: [
     {
-      id: "5",
+      id: "1",
+      image:
+        "https://res.cloudinary.com/dyzydm9nl/image/upload/v1772468795/Screen_Shot_2026-03-02_at_11.24.21_AM_knk46v.png",
+      cloudName: "dyzydm9nl",
+      name: "Shophr Retailers",
+      redirect: "https://retailers.shophr.co/",
+      description: "Shophr Retailers",
+    },
+    {
+      id: "4",
       image:
         "https://res.cloudinary.com/dyzydm9nl/image/upload/v1757606878/Ever%20Last%20Apps/Screen_Shot_2025-09-11_at_11.19.25_AM_nuyozi.png",
       cloudName: "dyzydm9nl",
@@ -63,24 +72,6 @@ export const images = {
       name: "Beary Soft Organic",
       redirect: "https://bearysoftorganic.netlify.app",
       description: "Beary Soft Organic",
-    },
-    {
-      id: "4",
-      image:
-        "https://res.cloudinary.com/dyzydm9nl/image/upload/v1701325189/Ever%20Last%20Apps/Screen_Shot_2023-11-30_at_1.19.00_AM_xoo4ue.png",
-      cloudName: "dyzydm9nl",
-      name: "Craig Mac Music",
-      redirect: "https://craigmac-music.vercel.app/",
-      description: "Craig Mac Music",
-    },
-    {
-      id: "1",
-      image:
-        "https://res.cloudinary.com/dyzydm9nl/image/upload/v1672525287/Ever%20Last%20Apps/Screen_Shot_2022-12-31_at_5.20.02_PM_hf2e9o.png",
-      cloudName: "dyzydm9nl",
-      name: "Juwans Portfolio",
-      redirect: "https://juwanspov.netlify.app",
-      description: "Juwans portfolio",
     },
   ],
   careersImages: [
