@@ -64,8 +64,8 @@ const Options = ({careerImages}) => {
               )
             }
             <div className="info">
-              <h2>Do you have experience with social media marketing?</h2>
-              <p>If you have experience with marketing then you're in the right place. Social media marketing, is an increasingly crucial aspect of a company's overall marketing strategy. The ability to effectively utilize various social media platforms to reach and engage target audiences can lead to increased brand awareness, stronger relationships with customers, and improved sales. As such, having experience in this field is highly valued in today's business world. <br /> Send us a copy of your resume or a portfolio of your work to be considered. </p>
+              <h2>Do you have experience with marketing?</h2>
+              <p>If you have experience with marketing then you're in the right place. Marketing, is an increasingly crucial aspect of a company's overall strategy. The ability to effectively utilize various social media platforms to reach and engage target audiences can lead to increased brand awareness, stronger relationships with customers, and improved sales. As such, having experience in this field is highly valued in today's business world. <br /> Send us a copy of your resume or a portfolio of your work to be considered. </p>
               <a target='_blank' href="mailto:everlastapps.co@gmail.com">Apply</a>
             </div>
         </div>
