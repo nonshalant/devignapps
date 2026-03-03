@@ -48,7 +48,7 @@ const Process = () => {
           Next step is to kick your feet up while everything discussed inside
           the consultation is developed into your magnificent website!{" "}
         </p>
-        <p>Please allow 2-4 weeks for completion of your masterpiece.</p>
+        <p>Please allow 1-2 weeks (depending on complexity) for completion of your masterpiece.</p>
       </div>
       {isMobile ? <ImArrowDown size={30} /> : <ImArrowRight size={30} />}
       <div className="step step_container">
