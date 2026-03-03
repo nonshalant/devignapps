@@ -1,47 +1,52 @@
-.footer{
-    background-color: rgb(58, 58, 192);
-    position: sticky;
-    bottom: 0;
-    width: 100%;
+.footer {
+  background-color: rgb(58, 58, 192);
+  bottom: 0;
+  width: 100%;
 }
 
-.footer_container{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2%;
-    color: whitesmoke;
+.contact_page .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.footer_container .column h2{
-    font-size: 2.8rem;
-    padding-bottom: 10%;
-    font-weight: 900;
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+  color: whitesmoke;
 }
 
-.footer_container .column h3{
-    color: whitesmoke;
-    padding-bottom: 5%;
+.footer_container .column h2 {
+  font-size: 2.8rem;
+  padding-bottom: 10%;
+  font-weight: 900;
+}
+
+.footer_container .column h3 {
+  color: whitesmoke;
+  padding-bottom: 5%;
 }
 
 .footer a {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 1023px) {
-    .footer {
-        padding-bottom: 2%;
-    }
-    
-    .footer_container {
-        flex-direction: column;
-        gap: 30px;
-    }
+  .footer {
+    padding-bottom: 2%;
+  }
 
-    .footer_container .column h2 {
-        padding-bottom: 5%;
-    }
+  .footer_container {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-    .footer_container .column h3 {
-        padding-bottom: 0;
-    }
+  .footer_container .column h2 {
+    padding-bottom: 5%;
+  }
+
+  .footer_container .column h3 {
+    padding-bottom: 0;
+  }
 }
