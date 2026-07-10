@@ -74,6 +74,26 @@ export const images = {
       description: "Beary Soft Organic",
     },
   ],
+  app_projects: [
+    {
+      id: "shophr-app",
+      image:
+        "https://res.cloudinary.com/dyzydm9nl/image/upload/v1783651384/iconOrangeLarge_oe3atf.png",
+      cloudName: "dyzydm9nl",
+      name: "Shophr",
+      redirect: "https://apps.apple.com/us/app/shophr/id6760482282",
+      description: "Shophr mobile app",
+    },
+    {
+      id: "shophr-driver",
+      image:
+        "https://res.cloudinary.com/dyzydm9nl/image/upload/v1783651520/shophr-driver-logo_eyxzoj.png",
+      cloudName: "dyzydm9nl",
+      name: "Shophr Driver",
+      redirect: "https://apps.apple.com/us/app/shophr-drive/id6760732986",
+      description: "Shophr Driver mobile app",
+    },
+  ],
   careersImages: [
     {
       id: "NY",

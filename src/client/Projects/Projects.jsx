@@ -1,20 +1,19 @@
-import React, { useEffect } from 'react'
-import Footer from '../Footer/Footer'
-import Works from './partials/Works'
-import './project.css'
+import React, { useEffect } from "react";
+import Footer from "../Footer/Footer";
+import Works from "./partials/Works";
+import "./project.css";
 
-const Projects = ({reputationImages}) => {
+const Projects = ({ websiteProjects, appProjects }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  useEffect(()=>{
-    window.scrollTo(0,0)
-  },[])
-  
   return (
-    <div className='projects'>
-    <Works reputationImages={reputationImages} />
+    <div className="projects">
+      <Works websiteProjects={websiteProjects} appProjects={appProjects} />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
