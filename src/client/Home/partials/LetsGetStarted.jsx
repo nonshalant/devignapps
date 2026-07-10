@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
 
 // icons
 import { BsFillTelephoneFill } from "react-icons/bs";
