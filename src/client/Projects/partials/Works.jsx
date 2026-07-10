@@ -43,8 +43,8 @@ const Works = ({ websiteProjects, appProjects }) => {
         <div className="section-title">
           <span>Websites</span>
           <p>
-            Responsive web experiences designed for speed, clarity, and strong
-            brand presence.
+            Responsive websites designed for speed, clarity, strong
+            brand presence, and client conversion. 
           </p>
         </div>
         <div className="projects-grid">
@@ -56,8 +56,8 @@ const Works = ({ websiteProjects, appProjects }) => {
         <div className="section-title">
           <span>Apps</span>
           <p>
-            App Store-ready mobile products with polished visuals and smooth
-            user journeys.
+            App Store-ready mobile products with polished visuals and a smooth
+            user interface.
           </p>
         </div>
         <div className="projects-grid">
