@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Devign Apps
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Marketing site for [Devign Apps](https://devignapps.com), a New York web and mobile
+app development studio. Built with React 18, Vite and plain CSS, deployed on Vercel.
 
-## Available Scripts
+## Getting started
 
-In the project directory, you can run:
+```bash
+nvm use            # Node 20+ (see .nvmrc)
+npm install
+npm run dev        # http://localhost:3000
+```
 
-### `npm start`
+| Script            | What it does                                   |
+| ----------------- | ---------------------------------------------- |
+| `npm run dev`     | Start the Vite dev server with hot reloading   |
+| `npm run build`   | Production build into `dist/`                  |
+| `npm run preview` | Serve the production build locally             |
+| `npm run lint`    | ESLint (React hooks + refresh rules)           |
+| `npm run format`  | Prettier over `src/` and `index.html`          |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+index.html              Document shell, fonts, meta tags, JSON-LD
+public/                 Static assets served as-is (favicons, robots, sitemap, images)
+src/
+  main.jsx              React entry point
+  App.jsx               Routes (inner pages are lazy-loaded)
+  styles/
+    tokens.css          Design tokens: brand colours, type scale, spacing, radii, shadows
+    base.css            Reset and element defaults
+    utilities.css       Layout primitives (.container, .section, .grid, .eyebrow, .reveal)
+  config/site.js        Company details, navigation, EmailJS identifiers
+  data/                 Page content (services, projects, testimonials, company facts)
+  lib/                  Hooks and helpers (page meta, scroll reveal, Cloudinary URLs)
+  components/
+    layout/             Header, Footer, SiteLayout, ScrollToTop
+    ui/                 Button, PageHero, Breadcrumbs, Stars
+    sections/           Reusable page sections (cards, process steps, contact form, CTA)
+  pages/                One folder per route, each with its own stylesheet
+```
 
-### `npm test`
+### Conventions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Content lives in `src/data` and `src/config`**, not in components. To add a project,
+  testimonial, role or service, edit the matching data file.
+- **Styling is plain CSS with design tokens.** Every colour, radius and spacing value comes
+  from `src/styles/tokens.css`; components use BEM-style class names (`.block__element--modifier`)
+  and ship their own stylesheet next to the component.
+- **Images** are served from Cloudinary through `cld()` (`src/lib/cloudinary.js`), which adds
+  `f_auto,q_auto` and a width so browsers never download full-size originals. Below-the-fold
+  images use `loading="lazy"`.
+- **Accessibility:** semantic landmarks, skip link, keyboard-operable menus, visible focus
+  styles, `prefers-reduced-motion` support, and real text for testimonials.
+- **SEO:** per-route `<title>`, description, canonical and Open Graph tags via `usePageMeta`,
+  plus `robots.txt`, `sitemap.xml` and JSON-LD organisation data.
 
-### `npm run build`
+## Contact form
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The form posts through [EmailJS](https://www.emailjs.com). The public identifiers are set in
+`src/config/site.js` and can be overridden with environment variables (see `.env.example`).
+Field names match the existing EmailJS template.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Vercel builds from `main` automatically. `vercel.json` sets the SPA rewrite, long-term caching
+for hashed assets and baseline security headers.

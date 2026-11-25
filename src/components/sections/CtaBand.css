@@ -1,0 +1,40 @@
+.cta-band {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) auto;
+  gap: var(--space-8);
+  align-items: center;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background:
+    radial-gradient(40rem 20rem at 100% 0%, rgb(0 160 168 / 0.35), transparent 60%),
+    linear-gradient(135deg, var(--navy-800), var(--navy-950));
+  color: #cfd9ec;
+}
+
+.cta-band h2 {
+  color: #fff;
+  margin-bottom: var(--space-2);
+}
+
+.cta-band p {
+  max-width: 36rem;
+}
+
+.cta-band__actions {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: start;
+}
+
+.cta-band__phone {
+  color: var(--teal-300);
+  font-weight: 500;
+}
+
+@media (max-width: 48rem) {
+  .cta-band {
+    grid-template-columns: 1fr;
+  }
+}

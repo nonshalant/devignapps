@@ -1,0 +1,7 @@
+.not-found .container {
+  display: grid;
+  gap: var(--space-5);
+  justify-items: start;
+  min-height: 50vh;
+  align-content: center;
+}

@@ -1,0 +1,111 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.8rem 1.4rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid transparent;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  transition:
+    background-color var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn--lg {
+  padding: 1rem 1.75rem;
+  font-size: var(--text-base);
+}
+
+.btn--sm {
+  padding: 0.55rem 1rem;
+  font-size: var(--text-xs);
+}
+
+.btn__icon {
+  width: 1.1em;
+  height: 1.1em;
+  transition: transform var(--dur-fast) var(--ease);
+}
+
+.btn:hover .btn__icon {
+  transform: translateX(3px);
+}
+
+.btn--primary {
+  background: var(--teal-500);
+  color: #fff;
+  box-shadow: 0 6px 18px rgb(0 160 168 / 0.3);
+}
+
+.btn--primary:hover {
+  background: var(--teal-600);
+  box-shadow: 0 10px 24px rgb(0 160 168 / 0.35);
+}
+
+.btn--navy {
+  background: var(--navy-800);
+  color: #fff;
+}
+
+.btn--navy:hover {
+  background: var(--navy-700);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: var(--line-strong);
+  color: var(--navy-800);
+}
+
+.btn--outline:hover {
+  border-color: var(--navy-800);
+  background: var(--navy-50);
+}
+
+.btn--ghost-light {
+  background: rgb(255 255 255 / 0.08);
+  border-color: rgb(255 255 255 / 0.25);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.btn--ghost-light:hover {
+  background: rgb(255 255 255 / 0.16);
+  border-color: rgb(255 255 255 / 0.5);
+}
+
+.btn--link {
+  padding: 0;
+  border-radius: 0;
+  color: var(--teal-600);
+  background: none;
+}
+
+.btn--link:hover {
+  color: var(--teal-700);
+  transform: none;
+}
+
+.btn[disabled],
+.btn[aria-disabled="true"] {
+  opacity: 0.6;
+  pointer-events: none;
+}

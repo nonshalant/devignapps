@@ -1,0 +1,135 @@
+.about-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.about-story__text {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.about-story__text p {
+  color: var(--ink-2);
+  font-size: var(--text-md);
+}
+
+.about-mission {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, var(--navy-800), var(--navy-950));
+  color: #cfd9ec;
+}
+
+.about-mission > svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--teal-300);
+}
+
+.about-mission h3 {
+  color: #fff;
+}
+
+.about-services {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.about-service {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: var(--space-8);
+  align-items: center;
+  padding: var(--space-6);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.about-service:nth-child(even) img {
+  order: 2;
+}
+
+.about-service img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.about-service div {
+  display: grid;
+  gap: var(--space-3);
+  justify-items: start;
+}
+
+.about-service p {
+  color: var(--ink-2);
+}
+
+.why-card {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.why-card__index {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--teal-500);
+}
+
+.why-card p {
+  color: var(--ink-2);
+  font-size: var(--text-sm);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+  margin-top: var(--space-12);
+  padding-top: var(--space-10);
+  border-top: 1px solid var(--line);
+}
+
+.about-stats li {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.about-stats strong {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  color: var(--navy-800);
+  line-height: 1;
+}
+
+.about-stats span {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+@media (max-width: 56rem) {
+  .about-story,
+  .about-service {
+    grid-template-columns: 1fr;
+  }
+
+  .about-service:nth-child(even) img {
+    order: 0;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
