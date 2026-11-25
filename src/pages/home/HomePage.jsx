@@ -59,7 +59,7 @@ export default function HomePage() {
                 <FiCheck aria-hidden="true" /> Free consultation
               </li>
               <li>
-                <FiCheck aria-hidden="true" /> Websites in 1-2 weeks
+                <FiCheck aria-hidden="true" /> Websites in 1-3 days
               </li>
             </ul>
           </div>

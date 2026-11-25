@@ -4,7 +4,7 @@ export const stats = [
   { value: "20+", label: "People and companies helped" },
   { value: "3+", label: "Team members across the USA" },
   { value: "2", label: "Apps live on the App Store" },
-  { value: "1-2 wks", label: "Typical website turnaround" },
+  { value: "1-3 days", label: "Typical website turnaround" },
 ];
 
 export const values = [

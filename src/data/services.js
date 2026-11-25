@@ -32,7 +32,7 @@ export const services = [
       "E-commerce, booking and portfolio builds",
       "Hosting setup and post-launch support",
     ],
-    timeline: "1-2 weeks",
+    timeline: "1-3 days",
     retainer: "$250 - $500",
     finalPayment: "$250 - $500",
     process: [
@@ -46,7 +46,7 @@ export const services = [
         title: "Website in progress",
         image: processImages.building,
         copy: "Kick your feet up while everything we discussed is designed and developed into your new website. You'll see progress along the way.",
-        note: "Please allow 1-2 weeks, depending on complexity.",
+        note: "Please allow 1-3 days, depending on complexity.",
       },
       {
         title: "Finish line",
@@ -75,7 +75,7 @@ export const services = [
       "Periodic progress reports throughout the build",
       "Maintenance and feature roadmaps after launch",
     ],
-    timeline: "3-5 months",
+    timeline: "Up to 2 weeks",
     retainer: "$1,000 - $3,000",
     finalPayment: "$1,000 - $3,000",
     process: [
@@ -89,7 +89,7 @@ export const services = [
         title: "App in progress",
         image: processImages.building,
         copy: "Everything discussed in the consultation is designed, built and tested. Periodic progress reports keep you in the loop at every milestone.",
-        note: "Please allow 3-5 months for completion.",
+        note: "Please allow up to 2 weeks for completion.",
       },
       {
         title: "Finish line",
